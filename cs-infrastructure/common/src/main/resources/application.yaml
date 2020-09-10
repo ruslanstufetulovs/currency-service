@@ -1,0 +1,15 @@
+currency-providers:
+  default-provider: EXCHANGE_RATES_API
+  currency-prioritized-providers:
+    RUB-USD: EXCHANGE_RATE
+    EUR-USD: EXCHANGE_RATES_API
+    EUR-GBP: EXCHANGE_RATE
+  providers:
+    - name: EXCHANGE_RATES_API
+      fee: 0.07
+      url: https://api.exchangeratesapi.io/latest
+    - name: EXCHANGE_RATE
+      fee: 0.03
+      url: https://api.exchangerate.host/latest
+
+
